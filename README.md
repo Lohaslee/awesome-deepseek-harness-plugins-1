@@ -425,6 +425,7 @@ flowchart LR
 - [dsh-schematic](https://github.com/Mason-1011/dsh-schematic) - Live plugin-topology and activity viewer with a guarded composition workbench: edits are previewed, validated, backed up, and reversible; tested with DSH 0.1.0-rc.8.
 - [dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) - Codex-style session model and reasoning-effort selector that follows adapter-advertised levels, with read-only guidance for custom-provider declarations.
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) - Login gateway for remote, multi-user DSH Web access, with HTTPS, quotas, sandbox restrictions, and audit logs.
+- [dsh-sidecar-conversation](https://github.com/gosomea/dsh-sidecar-conversation) - Side conversations in the native DSH Web sidebar: fork a turn or start with selected references, keep follow-up messages separate from the main session, and navigate citations back to their source. Uses native composer and session logs; version 0.2.8 tested with unmodified DSH 0.2.1-rc.3.
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - Search, show, hide, move, resize and arrange plugin controls in DSH Desktop and Web, with layout backup, restore and undo. Compatible with DSH 0.2.0-rc.2.
 - [dsh-ux-simple](https://github.com/KhalilYamber/dsh-prism) - A two-mode Web UI that provides plain-language tool-call cards while preserving the native view.
 - [dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) - Local-browser theme color, wallpaper, opacity, and blur customization for DSH Web.
