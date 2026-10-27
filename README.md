@@ -379,6 +379,10 @@ The `dsh-plugin` topic, a `dsh-` repository name, or a README claim alone is **n
 - [dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) - Checks a payroll sheet against published social-insurance, housing-fund and individual-income-tax parameters, with pass, pass_with_gaps, review and fail outcomes. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
 - [dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) - Extracts deadlines, deposit, validity, ceiling, bid composition and copy counts from a tender document, and reports the items it did not find rather than omitting them. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
 - [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) - Local non-generative decision layer: phocinae_ask and phocinae_gate return typed verdicts with calibrated confidence from a small decision model, with fail-closed escalation. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
+- [dsh-excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) - Joins two spreadsheets on a declared key and compares declared fields within declared tolerances, producing a Markdown report, a JSON result and a diff workbook; it reports differences rather than adjudicating them. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
+- [dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) - Checks an invoice ledger for duplicates keyed on code + number, arithmetic consistency, payer mismatch, date anomalies and template placeholders, and emits an anomaly list plus a workbook. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
+- [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) - Converts tables in .docx, .xlsx, .xlsm, .csv and .tsv files into the table JSON consumed by the rule checkers, and reports when it could not rather than guessing. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
+- [dsh-bid-health-check](https://github.com/PerryLink/dsh-bid-health-check) - Checks a bid requirement by requirement against a tender requirements pack and reports which requirements appear answered, weakly matched or not located; it reports differences rather than judging substantive compliance. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
 
 ## Design & Creative Tools
 
@@ -431,6 +435,7 @@ flowchart LR
 - [dsh-schematic](https://github.com/Mason-1011/dsh-schematic) - Live plugin-topology and activity viewer with a guarded composition workbench: edits are previewed, validated, backed up, and reversible; tested with DSH 0.1.0-rc.8.
 - [dsh-reasoning-effort](https://github.com/HanaAyane/dsh-reasoning-effort) - Codex-style session model and reasoning-effort selector that follows adapter-advertised levels, with read-only guidance for custom-provider declarations.
 - [dsh-passwords](https://github.com/slywalker2006/dsh-passwords) - Login gateway for remote, multi-user DSH Web access, with HTTPS, quotas, sandbox restrictions, and audit logs.
+- [dsh-sidecar-conversation](https://github.com/gosomea/dsh-sidecar-conversation) - Side conversations in the native DSH Web sidebar: fork a turn or start with selected references, keep follow-up messages separate from the main session, and navigate citations back to their source. Uses native composer and session logs; version 0.2.8 tested with unmodified DSH 0.2.1-rc.3.
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - Search, show, hide, move, resize and arrange plugin controls in DSH Desktop and Web, with layout backup, restore and undo. Compatible with DSH 0.2.0-rc.2.
 - [dsh-ux-simple](https://github.com/KhalilYamber/dsh-prism) - A two-mode Web UI that provides plain-language tool-call cards while preserving the native view.
 - [dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) - Local-browser theme color, wallpaper, opacity, and blur customization for DSH Web.
@@ -462,6 +467,8 @@ flowchart LR
 - [dsh-output-styles](https://github.com/PerryLink/dsh-output-styles) - Runtime-switchable model output styles with Claude Code outputStyles parity, plus the output.render.* presentation protocol: a /style command, per-session persistence, systemPrompt injection, six built-in styles, a web picker, and a renderer registry with per-session/per-tool rules and /export. Declares compatibility with DSH 0.1.6-alpha.2.
 - [dsh-sidebar-tidy](https://github.com/weibaohui/dsh-sidebar-tidy) - Sidebar tidy: when plugins pile up, the rows under 'New session' get crowded with panel and plugin entries. This plugin folds them all — global panel rows, plugin-injected entry rows (own and third-party alike), and bottom entries — into a single menu button whose secondary menu triggers each entry exactly as before; keep any entry permanently visible with a name whitelist, and the button turns into an icon when the sidebar collapses to a narrow rail. Installs via the `dsh.bundle` manifest (npm `@weibaohui/dsh-sidebar-tidy`).
 
+- [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) - Lists the attachments the current session actually received through the WeChat bridge and adopts one into the workspace on demand. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
+- [dsh-community-bench](https://github.com/PerryLink/dsh-community-bench) - Adds a Community Bench tab that reads the public task-conditioned registry and shows the same score everyone sees; it does not compute a local score. Declares compatibility with DSH 0.2.1-0 to 0.3.0.
 
 ## Developer Tooling
 

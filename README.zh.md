@@ -302,6 +302,7 @@ DSH 提供了以层级委派为主的表面与 workflow 组件；子 Agent 接�
 - [dsh-llm-verifier](https://github.com/Web0926/dsh-llm-verifier) - 经审批的 3/5 路编码 Agent 优选编排：隔离 Git worktree、宿主验证命令、LLM 验证器与独立赢家应用步骤，并包含凭据和进程输出防护。 / Approval-gated best-of-3/5 coding-agent orchestration with isolated Git worktrees, host validation commands, an LLM verifier, and a separate winner-apply step with credential and process-output safeguards.
 - [DeepSeek Harness Brain](https://github.com/AgriciDaniel/deepseek-harness-brain) - 带来源引用的学习与开发资源，含白话指南、Obsidian 知识库、辅助 Skill 与可移植性指引；基于固定 DSH 上游提交审阅。 / Source-cited learning and development resource with a plain-English guide, Obsidian knowledge base, assistant skill, and portability guidance; reviewed against a pinned upstream DSH commit.
 - [dsh-smooth-stream](https://github.com/Laplace-bit/dsh-smooth-stream) - 为 DeepSeek Harness Web UI 提供流畅流式渲染和丝滑滚动；已使用 DSH 0.1.0-rc.6 测试。 / Fluid streaming rendering and smooth scrolling for the DeepSeek Harness Web UI; tested with DSH 0.1.0-rc.6.
+- [dsh-sidecar-conversation](https://github.com/gosomea/dsh-sidecar-conversation) - 在 DSH Web 原生右侧栏展开侧问：从回合 Fork 或仅带选文新建，追问消息不写回主会话，点击引用可定位原文。复用原生输入框与会话日志；0.2.8 已在未修改的 DSH 0.2.1-rc.3 上测试。
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - 搜索、显示、隐藏、移动、缩放和排布 DSH Desktop 与 Web 中的插件控件，支持布局备份、恢复与撤销。 适配 DSH 0.2.0-rc.2。
 - [dsh-visual-edit](https://github.com/Han-1413141/dsh-visual-edit) - 在 DSH 预览中点选元素、画箭头或框选区域，将修改意见加入对话，并查看更新前后的截图对比。 适配 DSH 0.2.0-rc.2。
 - [dsh-wsl-native](https://github.com/Han-1413141/dsh-wsl-native) - 在同一个 Windows 窗口中使用 Windows 与原生 Linux DSH 会话，支持 WSL 环境切换和双向系统操作。 适配 DSH 0.2.0-rc.2。
@@ -401,6 +402,12 @@ DSH 提供了以层级委派为主的表面与 workflow 组件；子 Agent 接�
 - [dsh-payroll-audit](https://github.com/PerryLink/dsh-payroll-audit) - 按公开的社保、公积金与个人所得税参数核对工资表，结果分为 pass、pass_with_gaps、review、fail 四档。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Payroll parameter audit.
 - [dsh-tender-requirements](https://github.com/PerryLink/dsh-tender-requirements) - 从招标文件提取截止时间、保证金、有效期、最高限价、投标文件组成与正副本份数；未找到的项也逐条报告，不省略。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Tender requirements extractor.
 - [dsh-phocinae](https://github.com/PerryLink/dsh-phocinae) - 本地非生成式决策层：phocinae_ask 与 phocinae_gate 由小型决策模型返回带校准置信度的类型化裁决，并对无法回答的情况 fail-closed 升级。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Local non-generative decision layer.
+- [dsh-excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) - 按声明的主键连接两张表，按声明字段与容差比对，输出 Markdown 报告、JSON 结果与差异工作簿；只报告差异，不裁决对错。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Reconciles two spreadsheets on a declared key and reports differences within declared tolerances.
+- [dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) - 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Checks an invoice ledger for duplicates, arithmetic, payer mismatch, dates and placeholders.
+- [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) - 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Converts document tables into the table JSON consumed by the rule checkers.
+- [dsh-bid-health-check](https://github.com/PerryLink/dsh-bid-health-check) - 按招标要求逐条检查投标文件的响应位置，报告哪些要求看起来有应答、哪些匹配较弱、哪些未能定位；只报告差异，不判断是否实质满足。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Locates bid responses requirement by requirement without judging substantive compliance.
+- [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) - 列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Lists the attachments this session actually received and adopts one on demand.
+- [dsh-community-bench](https://github.com/PerryLink/dsh-community-bench) - 增加社区基准标签页，读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地计算分数。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Community Bench tab backed by the public task-conditioned registry; no local scoring.
 
 ## 贡献
 
