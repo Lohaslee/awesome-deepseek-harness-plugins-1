@@ -395,6 +395,13 @@ DSH 提供了以层级委派为主的表面与 workflow 组件；子 Agent 接�
 - [dsh-full-view](https://github.com/hankswang123/dsh-full-view) - 在 DSH Web 的助手回复上添加 Full View 按钮，将已渲染的当前轮内容显示在阅读浮层；客户端使用对话操作区和浮层插槽。
 - [dsh-har-triage](https://github.com/po-et/dsh-har-triage) - 离线 HAR 诊断工具和 CLI，在工作区生成 HTML 与 JSON 报告，显示匿名端点、耗时和状态信号；报告省略请求 URL、请求头、查询值与正文。
 - [dsh-connect-minimaxcode](https://github.com/JeffTsuiCUG/dsh-connect-minimaxcode) - 把 MiniMax Code 桌面 App（国内版）的模型接入 DSH 作为 Anthropic Messages 兼容提供方，带动态模型目录与每日签到领取免费额度，积分余额与到期信息显示在插件页面与输入框工具行（仅选中 MiniMax 模型时显示）；登录态可复用本机已登录的桌面 App，也可用插件自带的 OAuth 设备码流自行登录；非官方插件，依赖 MiniMax 客户端的非公开接口，仅供学习研究；声明兼容 DSH 0.2.1-rc.2 至 0.3.0。 / Connects the MiniMax Code models (CN build) to DSH as an Anthropic Messages compatible provider, with a live model catalog, the daily check-in that claims the free credits, and a credit balance with expiry details; unofficial plugin on MiniMax's undocumented client interfaces, for study and research only.
+- [dsh-excel-reconcile](https://github.com/PerryLink/dsh-excel-reconcile) - 按声明的主键连接两张表，按声明字段与容差比对，输出 Markdown 报告、JSON 结果与差异工作簿；只报告差异，不裁决对错。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Reconciles two spreadsheets on a declared key and reports differences within declared tolerances.
+- [dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) - 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Checks an invoice ledger for duplicates, arithmetic, payer mismatch, dates and placeholders.
+- [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) - 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Converts document tables into the table JSON consumed by the rule checkers.
+- [dsh-bid-health-check](https://github.com/PerryLink/dsh-bid-health-check) - 按招标要求逐条检查投标文件的响应位置，报告哪些要求看起来有应答、哪些匹配较弱、哪些未能定位；只报告差异，不判断是否实质满足。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Locates bid responses requirement by requirement without judging substantive compliance.
+- [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) - 列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Lists the attachments this session actually received and adopts one on demand.
+- [dsh-community-bench](https://github.com/PerryLink/dsh-community-bench) - 增加社区基准标签页，读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地计算分数。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Community Bench tab backed by the public task-conditioned registry; no local scoring.
+
 ## 贡献
 
 请阅读[中文贡献指南](CONTRIBUTING.zh.md)或[English guide](CONTRIBUTING.md)。提交条目时，请提供源码中 DSH 集成的具体证据。
