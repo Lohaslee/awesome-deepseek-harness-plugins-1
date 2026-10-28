@@ -433,6 +433,7 @@ flowchart LR
 - [dsh-ui-hub](https://github.com/Han-1413141/dsh-ui-hub) - Search, show, hide, move, resize and arrange plugin controls in DSH Desktop and Web, with layout backup, restore and undo. Compatible with DSH 0.2.0-rc.2.
 - [dsh-ux-simple](https://github.com/KhalilYamber/dsh-prism) - A two-mode Web UI that provides plain-language tool-call cards while preserving the native view.
 - [dsh-any-background](https://github.com/Tkingxiao/dsh-any-background) - Local-browser theme color, wallpaper, opacity, and blur customization for DSH Web.
+- [Linen theme](https://github.com/Chuyuxuan0v0/deepseek-harness-theme-linen) - Warm neutral theme for DSH Web, with adjustable corner radii, body/code font stacks, and emphasis weight. Ships a `dsh.bundle.patch` and uses the native theme override and settings APIs to apply Host-stored changes live. Requires the standard Web theme, slots, configForms, and locale services; compatibility with a specific host version is unverified.
 - [dsh-cc-tui](https://github.com/ccch1mneyyy/dsh-TUI) - Claude Code-style full-screen terminal interface.
 - [dsh-client-ui-brand](https://github.com/ningbonb/dsh-client-ui-brand) - Non-invasive Web product-name, logo, favicon, and PWA-icon branding; verified with DSH 0.1.1-rc.2.
 - [dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) - Terminal UI for DSH.
