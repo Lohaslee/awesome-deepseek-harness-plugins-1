@@ -271,6 +271,8 @@ DSH 提供了以层级委派为主的表面与 workflow 组件；子 Agent 接�
 
 ### 近期通过核验的新增 / Recently verified additions
 
+- [Linen theme](https://github.com/Chuyuxuan0v0/deepseek-harness-theme-linen) - DSH Web 暖中性主题，可调圆角、正文与代码字体栈及强调字重。通过 `dsh.bundle.patch` 安装，使用原生主题覆盖与设置接口，将保存在 Host 的配置实时应用到界面。需要标准 Web 的 theme、slots、configForms、locale 服务；具体宿主版本兼容性尚未验证。
+
 - [dsh-llm-llamacpp](https://github.com/slaren/dsh-llm-llamacpp) - 通过 `llm.registerAdapter` 将用户配置的 llama.cpp 服务接成 DSH 模型提供方：发现模型与上下文信息、流式返回结果，并在 Web 界面可选显示实时吞吐、slot 与 KV 缓存数据。API Key 从 DSH 凭据或启动环境中读取，仅发送至配置的服务；bundle 不负责启动 `llama-server`。可从 GitHub 或本地检出安装（不发布到 npm）；作者报告在 DSH 0.2.x 上测试。
 
 - [dsh-mcp-tools](https://github.com/hxlog/dsh-mcp-tools) - DSH 设置页的 MCP 服务器与工具管理器：添加 streamable-http / stdio 服务器、配置请求头、测试连通性，并逐个开关工具；停用的工具不会注册。通过 `dsh.bundle.patch` 安装（npm `dsh-mcp-tools`），作者报告在 DSH 0.2.1-rc.2 上测试。请求头与环境变量值保存在本地明文状态文件中；当前写入路径未设置限制性文件权限。
@@ -406,7 +408,7 @@ DSH 提供了以层级委派为主的表面与 workflow 组件；子 Agent 接�
 - [dsh-invoice-ledger](https://github.com/PerryLink/dsh-invoice-ledger) - 核对发票台账：按代码与号码识别重复、核对算式一致性、付款方不一致、日期异常与模板占位符，输出异常清单与工作簿。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Checks an invoice ledger for duplicates, arithmetic, payer mismatch, dates and placeholders.
 - [dsh-table-ingest](https://github.com/PerryLink/dsh-table-ingest) - 把 .docx、.xlsx、.xlsm、.csv、.tsv 中的表格转换成规则核查器可读的 table JSON；识别不了时明确报告，不做猜测。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Converts document tables into the table JSON consumed by the rule checkers.
 - [dsh-bid-health-check](https://github.com/PerryLink/dsh-bid-health-check) - 按招标要求逐条检查投标文件的响应位置，报告哪些要求看起来有应答、哪些匹配较弱、哪些未能定位；只报告差异，不判断是否实质满足。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Locates bid responses requirement by requirement without judging substantive compliance.
-- [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) - 列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Lists the attachments this session actually received and adopts one on demand.
+- [dsh-phone-inbox](https://github.com/PerryLink/dsh-phone-inbox) - 列出当前会话通过微信桥实际收到的附件，并按需将其中一个采纳到工作区。文档说明默认 `auto` 写入可在宿主文件服务拒绝后回退为 Node 直接写入；若要求宿主文件沙箱约束，应选择 `fs` 通道。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Session attachment inbox; auto writes may fall back to Node after host fs refusal. Use the fs channel to require host fs sandbox enforcement.
 - [dsh-community-bench](https://github.com/PerryLink/dsh-community-bench) - 增加社区基准标签页，读取公开的、按任务条件计算的 registry，展示所有人看到的同一分数；不在本地计算分数。声明兼容 DSH 0.2.1-0 至 0.3.0。 / Community Bench tab backed by the public task-conditioned registry; no local scoring.
 
 ## 贡献
